@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #076655;
+  color: #333;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+.header {
+  background-color: #076655;
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.header .logo {
+  width: 400px;
+  height: 300px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 40px;
+  margin: 40px;
+}
+
+.header__menu__link {
+  color: #24FF68;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header__menu__link:hover {
+  color: #5FFBCC;
+}
+
+/* Dropdown Menu */
+.header__menu__dropdown {
+  position: relative;
+}
+
+.header__menu__dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: #076655;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.header__menu__dropdown:hover .header__menu__dropdown__content {
+  display: block;
+}
+
+.header__menu__dropdown__content a {
+  color: #24FF68;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.header__menu__dropdown__content a:hover {
+  color: #5FFBCC;
+}
+
+/* Main Presentation Section */
+.presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.presentacion__contenido {
+  max-width: 50%;
+}
+
+.presentacion__contenido__titulo {
+  font-size: 36px;
+  color: #02ae39;
+}
+
+.título-destaque {
+  color: #076655;
+}
+
+.presentacion__contenido__texto {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.presentacion__enlaces {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  text-align: center;
+}
+
+.presentacion__enlaces__subtitulo {
+  font-size: 16px;
+  font-weight: normal;
+  color: #24FF68;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+.presentacion__enlaces__link img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+  margin-top: 65px;
+  margin-bottom: 5px;
+  
+}
+
+.presentacion__enlaces__link img:hover {
+  transform: scale(1.1);
+}
+
+/* Ajusta el tamaño de la imagen de la chica */
+.presentacion img {
+  max-width: 38%;    /* Reduce la imagen al 50% de su tamaño original */
+  height: auto;      /* Mantiene la proporción de la imagen */
+  margin-top: 20px;  /* Añade un margen superior para separar de otros elementos */
+}
+
+/* Footer */
+.footer {
+  background-color: #076655;
+  text-align: center;
+  padding: 15px 0;
+  color: #5FFBCC;
+  font-weight: normal;
+}
+.copyright{
+  font-size: 12px;
+  font-style: italic;
+}

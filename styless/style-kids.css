@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #076655;
+  color: #000000;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Video Background */
+.video-container{
+  position: absolute;
+  top: 0; /* Ajusta el valor de 'top' según sea necesario */
+  left: 0;
+  width: 100%;
+  height: 200%; /* Ajusta la altura si quieres que el video sea más corto */
+  z-index: -1;
+  object-fit: cover; /* Esto hará que el video se ajuste al contenedor manteniendo la proporción */
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Header */
+.header {
+  background-color: #076655;
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Asegura que el header esté encima del video */
+  flex-wrap: wrap; /* Allows for better wrapping on smaller screens */
+}
+
+.header .logo {
+  width: 400px;
+  height: 300px;
+  z-index: 1;
+}
+
+.header__menu {
+  display: flex;
+  gap: 40px;
+  margin: 40px;
+  z-index: 1;
+}
+
+.header__menu__link {
+  color: #24FF68;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.header__menu__link:hover {
+  color: #5FFBCC;
+}
+
+/* Dropdown Menu */
+.header__menu__dropdown {
+  position: relative;
+}
+
+.header__menu__dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: #076655;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.header__menu__dropdown:hover .header__menu__dropdown__content {
+  display: block;
+}
+
+.header__menu__dropdown__content a {
+  color: #24FF68;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.header__menu__dropdown__content a:hover {
+  color: #5FFBCC;
+}
+
+/* Main Presentation Section */
+.presentacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  z-index: 1;
+}
+
+.presentacion__contenido {
+  max-width: 50%;
+  z-index: 1;
+}
+
+.presentacion__contenido__titulo {
+  font-size: 36px;
+  color: #000000;
+  margin-left: 250px;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 8px;
+}
+
+.título-destaque {
+  color: #076655;
+}
+
+.presentacion__contenido__texto {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  margin-right: 100px;
+  padding:20px;
+  z-index: 1;
+  background-color: #24ff69e1;
+}
+
+.presentacion__enlaces {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  text-align: center;
+  z-index: 1;
+}
+
+.presentacion__enlaces__subtitulo {
+  font-size: 16px;
+  font-weight: normal;
+  color: #24FF68;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  z-index: 1;
+}
+
+.presentacion__enlaces__link img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+  margin-top: 18px;
+  margin-bottom: 5px;
+ }
+
+.presentacion__enlaces__link img:hover {
+  transform: scale(1.1);
+}
+
+/* Ajusta el tamaño de la imagen de la chica */
+.niña-derecha {
+  order: 1;
+  flex: 0 0 auto;
+  align-self: flex-end;
+  max-width: 30%;    /* Reduce la imagen al 50% de su tamaño original */
+  height: auto;      /* Mantiene la proporción de la imagen */
+  margin-right: 70px;
+}
+
+
+.niño-izquierda-arriba {
+  order: 2;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  max-width: 25%;    /* Reduce la imagen al 50% de su tamaño original */
+  height: auto;      /* Mantiene la proporción de la imagen */
+  margin-top: 20px;  /* Añade un margen superior para separar de otros elementos */
+}
+
+/* Footer */
+.footer {
+  background-color: #076655;
+  text-align: center;
+  padding: 15px 0;
+  color: #5FFBCC;
+  font-weight: normal;
+}
+.copyright{
+  font-size: 12px;
+  font-style: italic;
+}
